@@ -8,7 +8,7 @@
   "config": {
     "pmd": {
       "entry": "test.md",
-      "target": "dist/out"
+      "target": "dist/out.pdf"
     }
   },
   "author": "Falk Hoppe <falkhoppe81@gmail.com>",
