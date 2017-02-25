@@ -1,0 +1,27 @@
+{
+  "name": "portable-markdown",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Falk Hoppe <falkhoppe81@gmail.com>",
+  "license": "Apache-2.0",
+  "bin": {
+    "portable-markdown": "bin/portable-markdown.js"
+  },
+  "config": {
+    "convert": {
+      "from": "README.md",
+      "targetName": "supplier-request"
+    }
+  },
+  "dependencies": {
+    "fs-promise": "^2.0.0",
+    "html5-to-pdf": "^2.1.1",
+    "markdown-it": "^8.3.0",
+    "markdown-it-include": "^0.0.2",
+    "markdown-it-regex": "^0.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "standard": "^8.6.0"
+  }
+}

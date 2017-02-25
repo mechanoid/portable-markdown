@@ -1,0 +1,19 @@
+{
+  "name": "portable-markdown-example",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "portable-markdown"
+  },
+  "config": {
+    "pmd": {
+      "entry": "test.md",
+      "target": "dist/out"
+    }
+  },
+  "author": "Falk Hoppe <falkhoppe81@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "portable-markdown": "file:///Users/falk/code/gitlab.innoq.com/portable-markdown"
+  }
+}

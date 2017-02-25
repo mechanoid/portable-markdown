@@ -1,0 +1,51 @@
+Arguments: 
+  /Users/falk/.nvm/versions/node/v6.9.5/bin/node /Users/falk/.nvm/versions/node/v6.9.5/bin/yarn add fs-extra
+
+PATH: 
+  /usr/local/sbin:/Users/falk/code/go/bin:/usr/local/opt/go/libexec/bin:/Users/falk/.rbenv/shims:/Users/falk/.rbenv/bin:/Users/falk/.nvm/versions/node/v6.9.5/bin:/usr/local/heroku/bin:/Users/falk/code/bin:/usr/local/share/npm/bin:/Users/falk/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  0.20.3
+
+Node version: 
+  6.9.5
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "portable-markdown-example",
+    "version": "0.0.1",
+    "description": "",
+    "scripts": {
+      "build": "portable-markdown"
+    },
+    "config": {
+      "pmd": {
+        "entry": "test.md",
+        "target": "dist/out"
+      }
+    },
+    "author": "Falk Hoppe <falkhoppe81@gmail.com>",
+    "license": "Apache-2.0",
+    "dependencies": {
+      "portable-markdown": "file:///Users/falk/code/gitlab.innoq.com/portable-markdown"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: ENOENT: no such file or directory, lstat '/Users/falk/Library/Caches/Yarn/npm-portable-markdown-0.0.1/node_modules/electron/dist/Electron.app/Contents/Frameworks/Electron Framework.framework/Versions/Current'
+      at Error (native)
+      at Object.fs.lstatSync (fs.js:982:18)
+      at Object.realpathSync (fs.js:1662:21)
+      at /Users/falk/.nvm/versions/node/v6.9.5/lib/node_modules/yarn/lib/util/fs.js:377:80
+      at throw (native)
+      at step (/Users/falk/.nvm/versions/node/v6.9.5/lib/node_modules/yarn/node_modules/babel-runtime/helpers/asyncToGenerator.js:17:30)
+      at /Users/falk/.nvm/versions/node/v6.9.5/lib/node_modules/yarn/node_modules/babel-runtime/helpers/asyncToGenerator.js:30:13
