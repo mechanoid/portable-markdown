@@ -14,6 +14,6 @@
   "author": "Falk Hoppe <falkhoppe81@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "portable-markdown": "file:///Users/falk/code/gitlab.innoq.com/portable-markdown"
+    "portable-markdown": ".."
   }
 }
