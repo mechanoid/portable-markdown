@@ -10,7 +10,7 @@
       "entry": "test.md",
       "target": "dist/out.pdf",
       "options": {
-        "includes": ["assets/styles.css"]
+        "include": ["assets/styles.css"]
       }
     }
   },
