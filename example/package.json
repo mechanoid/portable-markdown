@@ -8,7 +8,10 @@
   "config": {
     "pmd": {
       "entry": "test.md",
-      "target": "dist/out.pdf"
+      "target": "dist/out.pdf",
+      "options": {
+        "includes": ["assets/styles.css"]
+      }
     }
   },
   "author": "Falk Hoppe <falkhoppe81@gmail.com>",

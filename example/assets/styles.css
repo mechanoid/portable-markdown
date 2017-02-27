@@ -1,0 +1,62 @@
+hr.page-break {
+  /* remove default styles */
+  border: none;
+
+  /* disable element in non print environments */
+  display: none;
+}
+
+@media print {
+  /*@page {
+    margin-top: 3cm !important;
+    margin-bottom: 3cm !important;
+    padding-top: 3cm !important;
+    padding-bottom: 3cm !important;
+  }*/
+
+  body {
+    margin-left: 5em !important;
+    margin-right: 5em !important;
+  }
+
+  hr.page-break {
+    display: block;
+    page-break-after: always;
+  }
+
+  /* all but the first (history) */
+  h2 ~ h2, h3 {
+    page-break-before: always;
+  }
+
+  h2 + h3 {
+    page-break-before: avoid;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid !important;
+  }
+
+  h2 {
+    margin-bottom: 1em !important;
+  }
+
+  h3, h4, h5, h6 {
+    margin-top: 1em;
+    margin-bottom: .5em !important;
+  }
+
+  p {
+    margin-bottom: 2em !important;
+    line-height: 1.75 !important;
+  }
+
+  table {
+    font-size: .75em;
+  }
+
+  td {
+    padding: .3em !important;
+    border: 1px solid #000;
+  }
+}
